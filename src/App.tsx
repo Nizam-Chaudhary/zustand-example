@@ -16,6 +16,7 @@ export default function App() {
     }))
   )
 
+  // setTotal when products state changes
   useEffect(() => {
     const unSub = useStore.subscribe(
       (state) => state.products,
